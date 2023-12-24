@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/formsCallback.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <header class="flex_center">
+        <div class="header-element">
+            <img class="header__logo slide__animation" src="img/logo.png" id="logo" onclick="increaseSizeOfLogo()"></img>
+            <h1 class="white_font">
+                <span >
+                    С помощью нас <br>
+                    вы сможете создать то, о чем <br>
+                </span>
+                желаете!
+            </h1>
+            <p class="white_font lower_font">
+                Наши возможности + опыт позволят Вам достичь <br>
+                огромного успеха. Мы верим в вас! И знаем это на <br>
+                все 100%. Вас не остановить!
+            </p>
+            <button class="button btn__animation">
+                Узнать больше...
+            </button>
+        </div>
+        <div class="header-element header-element-extra-left">
+            <img class="header__image" src="img/header-img.png"></img>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1 style="text-align: center;" class="main-h1">Что вам необходимо?</h1>
+            <div class="flex">
+                <div class="main-block">
+                    <img class="main-image animate__animated animate__bounce" src="img/f3.png">
+                    <h2 class="main-h2">Первый блок</h2>
+                    <p class="main-p">lurem, ipusum dolut sim amot conserf glsk</p>
+                </div>
+    
+                <div class="main-block ">
+                    <img class="main-image animate__animated animate__bounce" src="img/f4.png">
+                    <h2 class="main-h2">Второй блок</h2>
+                    <p class="main-p">lurem, ipusum dolut sim amot conserf glsk</p>
+                </div>
+    
+                <div class="main-block">
+                    <img class="main-image animate__animated animate__bounce" src="img/f5.png">
+                    <h2 class="main-h2">Третий блок</h2>
+                    <p class="main-p">lurem, ipusum dolut sim amot conserf glsk</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-form-div" >
+            <h1 class="form-h1">Форма заказа обратного звонка</h1>
+            <form class="form" action="">
+                <input class="button" type="text" placeholder="Имя" required>
+                <input class="button" type="email" placeholder="Введите свой E-mail" required>
+                <input class="button" type="number" placeholder="Телефон" pattern="[0-9]{10}" required>
+                <input class="button" type="text" placeholder="Какая тема Вас интересует?">
+                <input class="send_button btn__animation" type="button" value="Отправить запрос" onclick="alert('heloo')">
+            </form>
+        </div>
+
+        <div class="main-form-div" >
+            <h1 class="form-h1">Форма заказа продукта или услуги</h1>
+            <form class="form" action="">
+                <input class="button" type="text" placeholder="Название продукта" id="product" oninput="checkProduct()">
+                <input class="button" type="text" placeholder="Адрес доставки" id="address" oninput="checkAddress()">
+                <input class="button" type="number" placeholder="Телефон" id="phone" oninput="checkPhone()">
+                <input class="button" type="text" placeholder="Комментарий">
+                <input class="send_button btn__animation" type="button" value="Отправить запрос" id='form' onclick="submitForm()">
+            </form>
+        </div>
+    </main>
+
+    <footer >
+        <h2 class="white_font footer-h2 slide__animation" onclick="hideRights()" id="rights">@ Все на этом сайте защищено</h2>
+    </footer>
+</body>
+</html>
